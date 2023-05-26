@@ -1,0 +1,355 @@
+/* start header  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.logo {
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.logo img {
+  width: 200px;
+}
+.nav {
+  float: right;
+  margin-right: 10px;
+}
+.nav li {
+  list-style-type: none;
+  float: left;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.nav a:hover {
+  color: #8e7754;
+}
+
+/* end Header section */
+
+/* start home section  */
+.home {
+  background-image: url("../IMGS/top-view-basket-full-breads-as-baguette-bagel-rye-with-sunflower-seeds-black-surface.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.intro {
+  margin: auto;
+  position: absolute;
+  width: 700px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.intro Button {
+  padding: 20px 30px;
+  border: none;
+  background-color: #8e7754;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  margin-left: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.intro button:first-of-type {
+  border: 2px solid #8e7754;
+}
+.intro button:first-of-type:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+}
+.intro button:last-child {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.intro button:last-child:hover {
+  background-color: white;
+  color: black;
+}
+
+.intro h3 {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: -35px;
+}
+.intro h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+.intro p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.home .animate {
+  width: 40px;
+  height: 55px;
+  border-radius: 35%;
+  border: 2px solid white;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.animate div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: down;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes down {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(40px);
+    opacity: 0%;
+  }
+}
+/* end home section */
+/* start who section */
+.Who {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.Who img {
+  width: 600px;
+}
+.Who .img {
+  width: 600px;
+  display: inline-block;
+  overflow: hidden;
+}
+.Who .Data {
+  display: inline-block;
+  width: 40%;
+  margin-left: 100px;
+  vertical-align: top;
+}
+.Who .Data h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.Who .Data p {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.Who .Data li {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  list-style-position: inside;
+}
+.Who .Data li:nth-child(1) {
+  list-style-image: url(../IMGS/list-1.PNG);
+}
+.Who .Data li:nth-child(2) {
+  list-style-image: url(../IMGS/list-2.PNG);
+}
+.Who .Data li:nth-child(3) {
+  list-style-image: url(../IMGS/list-3.PNG);
+}
+.Who .Data li:nth-child(4) {
+  list-style-image: url(../IMGS/list-4.PNG);
+}
+/* end who section  */
+/* start location section  */
+.Location {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f8f8f8;
+}
+.Location img {
+  width: 500px;
+}
+.Location .img {
+  width: 500px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 140px;
+}
+.Location .Data {
+  display: inline-block;
+  width: 40%;
+  margin-right: 50px;
+  margin-left: 25px;
+  vertical-align: top;
+}
+.Location .Data p {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.Location .Data h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+/* end location section  */
+/* start baking section  */
+.baking {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.baking h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.baking .Data img {
+  width: 350px;
+}
+.baking .Data {
+  width: 30%;
+  display: inline-block;
+  margin-top: 50px;
+}
+.baking .Data p {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.baking .Data h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* end baking section  */
+/* start Contact section  */
+
+.Contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f8f8f8;
+}
+.Contact .iframe {
+  width: 500px;
+  float: right;
+  vertical-align: middle;
+}
+.Contact .Data {
+  display: inline-block;
+  width: 40%;
+  margin-left: 100px;
+  vertical-align: top;
+}
+.Contact .Data h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.Contact .Data p {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.Contact .Data li {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  list-style-position: inside;
+}
+.Contact .Data li:nth-child(1) {
+  list-style-image: url(../IMGS/contact-1.PNG);
+}
+.Contact .Data li:nth-child(2) {
+  list-style-image: url(../IMGS/contact-2.PNG);
+}
+.Contact .Data li:nth-child(3) {
+  list-style-image: url(../IMGS/contact-3.PNG);
+}
+.Contact .Data li:nth-child(4) {
+  list-style-image: url(../IMGS/contact-4.PNG);
+}
+/* end Contact section */
+/* start footer  */
+footer {
+  padding-top: 100px;
+  background-color: #403d38;
+  color: white;
+}
+footer .info {
+  float: left;
+  width: 20%;
+  margin-left: 50px;
+}
+.clr {
+  clear: both;
+}
+footer li {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+footer li:not(:last-of-type) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+}
+footer h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+footer p {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+footer .Contact-info li:nth-child(1) {
+  list-style-image: url(../IMGS/footer-1.PNG);
+}
+footer .Contact-info li:nth-child(2) {
+  list-style-image: url(../IMGS/footer-2.PNG);
+}
+footer .Contact-info li:nth-child(3) {
+  list-style-image: url(../IMGS/footer-3.PNG);
+}
+footer .Contact-info li:nth-child(4) {
+  list-style-image: url(../IMGS/footer-4.PNG);
+}
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #353330;
+  color: white;
+  text-align: center;
+}
+/* end footer  */
+/* end Project  */
